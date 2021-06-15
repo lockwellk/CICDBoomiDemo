@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Boomi_KenHilmen/CICDBoomiDemo" componentId="fdd37f12-e7e1-4ea1-9d4b-631b58a53908" version="1" name="Sample SF Account to FF" type="transform.map" createdDate="2021-06-15T20:54:57Z" createdBy="ken.hilmen@dell.com" modifiedDate="2021-06-15T20:54:57Z" modifiedBy="ken.hilmen@dell.com" deleted="false" currentVersion="true" folderName="CICDBoomiDemo" folderId="Rjo0MDkzMjg2" copiedFromComponentId="74f2a9e6-7bf7-4195-8712-42a8601b2b99" copiedFromComponentVersion="21">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <Map xmlns="" fromProfile="ee37de1f-ab57-4cce-8e67-0456493800e8" toProfile="bdb8c97d-92ad-4fe7-a41b-e121ba35b968">
+      <Mappings>
+        <Mapping fromKey="2" fromKeyPath="*[@key='1']/*[@key='2']" fromNamePath="Account/Id" fromType="profile" toKey="50" toKeyPath="*[@key='1']/*[@key='2']/*[@key='50']" toNamePath="Record/Elements/Id" toType="profile"/>
+        <Mapping fromKey="2" fromKeyPath="*[@key='1']/*[@key='2']" fromNamePath="Account/Id" fromType="profile" toKey="49" toKeyPath="*[@key='1']/*[@key='2']/*[@key='49']" toNamePath="Record/Elements/AccountId" toType="profile"/>
+        <Mapping fromKey="5" fromKeyPath="*[@key='1']/*[@key='5']" fromNamePath="Account/Name" fromType="profile" toKey="52" toKeyPath="*[@key='1']/*[@key='2']/*[@key='52']" toNamePath="Record/Elements/AccountName" toType="profile"/>
+        <Mapping fromKey="25" fromKeyPath="*[@key='1']/*[@key='25']" fromNamePath="Account/Industry__c" fromType="profile" toKey="53" toKeyPath="*[@key='1']/*[@key='2']/*[@key='53']" toNamePath="Record/Elements/Industry" toType="profile"/>
+        <Mapping fromKey="5" fromKeyPath="*[@key='1']/*[@key='5']" fromNamePath="Account/Name" fromType="profile" toKey="8" toKeyPath="*[@key='1']/*[@key='2']/*[@key='8']" toNamePath="Record/Elements/LastName" toType="profile"/>
+        <Mapping fromKey="5" fromKeyPath="*[@key='1']/*[@key='5']" fromNamePath="Account/Name" fromType="profile" toKey="9" toKeyPath="*[@key='1']/*[@key='2']/*[@key='9']" toNamePath="Record/Elements/FirstName" toType="profile"/>
+        <Mapping fromKey="69" fromKeyPath="*[@key='1']/*[@key='49']/*[@key='50']/*[@key='69']" fromNamePath="Account/Contacts__r/Contact__c/Title__c" fromType="profile" toKey="10" toKeyPath="*[@key='1']/*[@key='2']/*[@key='10']" toNamePath="Record/Elements/Salutation" toType="profile"/>
+        <Mapping fromKey="54" fromKeyPath="*[@key='1']/*[@key='49']/*[@key='50']/*[@key='54']" fromNamePath="Account/Contacts__r/Contact__c/Name" fromType="profile" toKey="11" toKeyPath="*[@key='1']/*[@key='2']/*[@key='11']" toNamePath="Record/Elements/ContactName" toType="profile"/>
+        <Mapping fromKey="26" fromKeyPath="*[@key='1']/*[@key='26']" fromNamePath="Account/Billing_Address__c" fromType="profile" toKey="12" toKeyPath="*[@key='1']/*[@key='2']/*[@key='12']" toNamePath="Record/Elements/Address" toType="profile"/>
+        <Mapping fromKey="18" fromKeyPath="*[@key='1']/*[@key='18']" fromNamePath="Account/Phone__c" fromType="profile" toKey="22" toKeyPath="*[@key='1']/*[@key='2']/*[@key='22']" toNamePath="Record/Elements/Phone" toType="profile"/>
+        <Mapping fromKey="32" fromKeyPath="*[@key='1']/*[@key='32']" fromNamePath="Account/Fax__c" fromType="profile" toKey="23" toKeyPath="*[@key='1']/*[@key='2']/*[@key='23']" toNamePath="Record/Elements/Fax" toType="profile"/>
+        <Mapping fromFunction="3" fromKey="2" fromType="function" toKey="30" toKeyPath="*[@key='1']/*[@key='2']/*[@key='30']" toNamePath="Record/Elements/Title" toType="profile"/>
+        <Mapping fromKey="18" fromKeyPath="*[@key='1']/*[@key='18']" fromNamePath="Account/Phone__c" fromType="profile" toFunction="3" toKey="1" toType="function"/>
+        <Mapping fromKey="25" fromKeyPath="*[@key='1']/*[@key='25']" fromNamePath="Account/Industry__c" fromType="profile" toKey="31" toKeyPath="*[@key='1']/*[@key='2']/*[@key='31']" toNamePath="Record/Elements/Department" toType="profile"/>
+        <Mapping fromKey="18" fromKeyPath="*[@key='1']/*[@key='18']" fromNamePath="Account/Phone__c" fromType="profile" toKey="33" toKeyPath="*[@key='1']/*[@key='2']/*[@key='33']" toNamePath="Record/Elements/LeadSource" toType="profile"/>
+        <Mapping fromKey="30" fromKeyPath="*[@key='1']/*[@key='30']" fromNamePath="Account/Active__c" fromType="profile" toKey="48" toKeyPath="*[@key='1']/*[@key='2']/*[@key='48']" toNamePath="Record/Elements/Status" toType="profile"/>
+        <Mapping fromKey="68" fromKeyPath="*[@key='1']/*[@key='49']/*[@key='50']/*[@key='68']" fromNamePath="Account/Contacts__r/Contact__c/Email__c" fromType="profile" toKey="29" toKeyPath="*[@key='1']/*[@key='2']/*[@key='29']" toNamePath="Record/Elements/Email" toType="profile"/>
+        <Mapping fromFunction="4" fromKey="2" fromType="function" toKey="51" toKeyPath="*[@key='1']/*[@key='2']/*[@key='51']" toNamePath="Record/Elements/CreateDate" toType="profile"/>
+      </Mappings>
+      <Functions optimizeExecutionOrder="true">
+        <FunctionStep cacheEnabled="true" cacheOption="none" category="String" key="3" name="Whitespace Trim" position="3" sumEnabled="false" type="WhitespaceTrim" x="30.0" y="229.0">
+          <Inputs>
+            <Input default="" key="1" name="Original String"/>
+          </Inputs>
+          <Outputs>
+            <Output key="2" name="Result"/>
+          </Outputs>
+          <Configuration/>
+        </FunctionStep>
+        <FunctionStep cacheEnabled="true" category="Date" key="4" name="Get Current Date" position="4" sumEnabled="false" type="CurrentDate" x="10.0" y="326.0">
+          <Inputs/>
+          <Outputs>
+            <Output key="2" name="Result"/>
+          </Outputs>
+          <Configuration/>
+        </FunctionStep>
+      </Functions>
+      <Defaults/>
+      <DocumentCacheJoins/>
+    </Map>
+  </bns:object>
+</bns:Component>

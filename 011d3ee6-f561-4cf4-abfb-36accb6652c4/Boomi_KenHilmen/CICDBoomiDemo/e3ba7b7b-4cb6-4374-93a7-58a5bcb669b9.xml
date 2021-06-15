@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Boomi_KenHilmen/CICDBoomiDemo" componentId="e3ba7b7b-4cb6-4374-93a7-58a5bcb669b9" version="1" name="Salesforce sapadmin@boomidemo.com" type="connector-settings" subType="salesforce" createdDate="2021-06-15T20:54:57Z" createdBy="ken.hilmen@dell.com" modifiedDate="2021-06-15T20:54:57Z" modifiedBy="ken.hilmen@dell.com" deleted="false" currentVersion="true" folderName="CICDBoomiDemo" folderId="Rjo0MDkzMjg2" copiedFromComponentId="74f2a9e6-7bf7-4195-8712-42a8601b2b99" copiedFromComponentVersion="21">
+  <bns:encryptedValues>
+    <bns:encryptedValue path="//SalesforceSettings/AuthSettings/@password" isSet="true"/>
+  </bns:encryptedValues>
+  <bns:description/>
+  <bns:object>
+    <SalesforceSettings xmlns="" maxActiveConnections="10" url="https://login.salesforce.com/services/Soap/u/39.0" version="vx">
+      <AuthSettings password="064c2e3a29d2a9005bf1fa2e12cb9e92ab5435ffc3d615f9f54d2ea2cfe3daa53b5cdc392c2b8236ae20998e838752bb133368ce9a6ee1bc1ab2318900eaeeca" user="sapadmin@boomidemo.com"/>
+    </SalesforceSettings>
+  </bns:object>
+</bns:Component>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Boomi_KenHilmen/CICDBoomiDemo" componentId="4b8b9fb2-ba15-468e-b307-4ff45d7627a3" version="1" name="Work Directory" type="connector-settings" subType="disk" createdDate="2021-06-15T20:54:58Z" createdBy="ken.hilmen@dell.com" modifiedDate="2021-06-15T20:54:58Z" modifiedBy="ken.hilmen@dell.com" deleted="false" currentVersion="true" folderName="CICDBoomiDemo" folderId="Rjo0MDkzMjg2" copiedFromComponentId="74f2a9e6-7bf7-4195-8712-42a8601b2b99" copiedFromComponentVersion="21">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <DiskSettings xmlns="" directory="work"/>
+  </bns:object>
+</bns:Component>

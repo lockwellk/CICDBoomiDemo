@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Boomi_KenHilmen" componentId="0580a880-5f39-4753-a81b-2ed1ca0ad9bd" version="8" name="SugarCRM Account to MDM Process" type="process" createdDate="2020-05-06T20:10:50Z" createdBy="ken.hilmen@dell.com" modifiedDate="2020-07-16T17:59:33Z" modifiedBy="ken.hilmen@dell.com" deleted="false" currentVersion="true" folderName="Boomi_KenHilmen" folderId="RjoyOTE3NzA1">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <process xmlns="" allowSimultaneous="false" enableUserLog="false" processLogOnErrorOnly="false" purgeDataImmediately="false" updateRunDates="true" workload="general">
+      <shapes>
+        <shape image="start" name="shape1" shapetype="start" userlabel="SugarCRM to MDM" x="48.0" y="48.0">
+          <configuration>
+            <connectoraction actionType="QUERY" allowDynamicCredentials="NONE" connectionId="94a528c4-4502-43b2-a0a3-87c8e7ed930b" connectorType="sugarcrmrest" hideSettings="false" operationId="afc05d99-019a-4825-add4-531c1950bb5e" parameter-profile="EMBEDDED|genericparameterchooser|afc05d99-019a-4825-add4-531c1950bb5e">
+              <parameters>
+                <parametervalue elementToSetId="1" elementToSetName="ModifiedRecently" name="ModifiedRecently" valueType="date">
+                  <dateparameter dateparametertype="relative" datetimemask="yyyy-MM-dd'T'HH:mm:ss.SSS'Z'">
+                    <datedelta sign="minus" unit="days" value="1"/>
+                  </dateparameter>
+                </parametervalue>
+              </parameters>
+            </connectoraction>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape1.dragpoint1" toShape="shape2" x="224.0" y="57.0">
+              <linesegment length="0" name="shape1.dragpoint1.lineseg1" orient="horizontal" x="82.0" y="63.0"/>
+              <linesegment length="0" name="shape1.dragpoint1.lineseg2" orient="vertical" x="82.0" y="63.0"/>
+              <linesegment length="79" name="shape1.dragpoint1.lineseg3" orient="horizontal" x="82.0" y="63.0"/>
+              <linesegment length="0" name="shape1.dragpoint1.lineseg4" orient="vertical" x="161.0" y="63.0"/>
+              <linesegment length="63" name="shape1.dragpoint1.lineseg5" orient="horizontal" x="161.0" y="63.0"/>
+            </dragpoint>
+          </dragpoints>
+        </shape>
+        <shape image="map_icon" name="shape2" shapetype="map" userlabel="" x="240.0" y="48.0">
+          <configuration>
+            <map mapId="c1b52388-790f-4b23-8e36-d5d4b45ca999"/>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape2.dragpoint1" toShape="shape3" x="416.0" y="57.0">
+              <linesegment length="0" name="shape2.dragpoint1.lineseg1" orient="horizontal" x="274.0" y="63.0"/>
+              <linesegment length="0" name="shape2.dragpoint1.lineseg2" orient="vertical" x="274.0" y="63.0"/>
+              <linesegment length="79" name="shape2.dragpoint1.lineseg3" orient="horizontal" x="274.0" y="63.0"/>
+              <linesegment length="0" name="shape2.dragpoint1.lineseg4" orient="vertical" x="353.0" y="63.0"/>
+              <linesegment length="63" name="shape2.dragpoint1.lineseg5" orient="horizontal" x="353.0" y="63.0"/>
+            </dragpoint>
+          </dragpoints>
+        </shape>
+        <shape image="connectoraction_icon" name="shape3" shapetype="connectoraction" userlabel="" x="432.0" y="48.0">
+          <configuration>
+            <connectoraction actionType="UPSERT" allowDynamicCredentials="NONE" connectionId="e06c14ca-0f06-4502-930b-3847c7e3e7a5" connectorType="mdm" hideSettings="false" operationId="4e7618f4-55c0-4da9-aa3c-cab1c1957ff7" parameter-profile="e8621b43-5c1e-49cb-b86b-484ae65aa36e">
+              <parameters/>
+            </connectoraction>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape3.dragpoint1" toShape="shape4" x="608.0" y="57.0">
+              <linesegment length="0" name="shape3.dragpoint1.lineseg1" orient="horizontal" x="466.0" y="63.0"/>
+              <linesegment length="0" name="shape3.dragpoint1.lineseg2" orient="vertical" x="466.0" y="63.0"/>
+              <linesegment length="79" name="shape3.dragpoint1.lineseg3" orient="horizontal" x="466.0" y="63.0"/>
+              <linesegment length="0" name="shape3.dragpoint1.lineseg4" orient="vertical" x="545.0" y="63.0"/>
+              <linesegment length="63" name="shape3.dragpoint1.lineseg5" orient="horizontal" x="545.0" y="63.0"/>
+            </dragpoint>
+          </dragpoints>
+        </shape>
+        <shape image="stop_icon" name="shape4" shapetype="stop" userlabel="" x="624.0" y="48.0">
+          <configuration>
+            <stop continue="true"/>
+          </configuration>
+          <dragpoints/>
+        </shape>
+      </shapes>
+    </process>
+  </bns:object>
+  <bns:processOverrides/>
+</bns:Component>

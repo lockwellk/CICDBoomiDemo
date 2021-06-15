@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Boomi_KenHilmen/Demos/SugarCRM Test" componentId="94a528c4-4502-43b2-a0a3-87c8e7ed930b" version="4" name="New SugarCRM REST Connection" type="connector-settings" subType="sugarcrmrest" createdDate="2020-05-05T17:25:09Z" createdBy="ken.hilmen@dell.com" modifiedDate="2020-05-05T19:15:06Z" modifiedBy="ken.hilmen@dell.com" deleted="false" currentVersion="true" folderName="SugarCRM Test" folderId="RjozMjY0NjUw">
+  <bns:encryptedValues>
+    <bns:encryptedValue path="//GenericConnectionConfig/field[@type='password']" isSet="true"/>
+    <bns:encryptedValue path="//GenericConnectionConfig/field[@type='password']" isSet="true"/>
+  </bns:encryptedValues>
+  <bns:description/>
+  <bns:object>
+    <GenericConnectionConfig xmlns="">
+      <field id="base_url" type="string" value="https://dellboomiisven.sugarondemand.com/rest/v10/"/>
+      <field id="client_id" type="string" value="Boomi_key"/>
+      <field id="client_secret" type="password" value="892f782b52e375f86a0120a89b5390462b91c537be750a8a6d80d2ee0d2d38070cb3a95c5e3e5f65e92729daa979897908cfa0f6ebafb8b0fb5f274fb16c7973"/>
+      <field id="username" type="string" value="admin"/>
+      <field id="password" type="password" value="5ee55d30ea6328a771650f261bf997fec058c58d70642f42b23fc3f7ad7fb8ee7116dc4a870b3488f30671cb1970cb5aa226b7684350455e06379dab76b47e06"/>
+    </GenericConnectionConfig>
+  </bns:object>
+</bns:Component>

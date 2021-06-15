@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Boomi_KenHilmen" componentId="4e7618f4-55c0-4da9-aa3c-cab1c1957ff7" version="1" name="SugarCRM Account MDM Connector Operation" type="connector-action" subType="mdm" createdDate="2020-05-06T20:34:53Z" createdBy="ken.hilmen@dell.com" modifiedDate="2020-05-06T20:34:53Z" modifiedBy="ken.hilmen@dell.com" deleted="false" currentVersion="true" folderName="Boomi_KenHilmen" folderId="RjoyOTE3NzA1">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <Operation xmlns="" returnApplicationErrors="false" trackResponse="false">
+      <Archiving directory="" enabled="false"/>
+      <Configuration>
+        <GenericOperationConfig objectTypeId="universeId_9c573cb8-2a4d-437c-a6c8-6dced8934e14" objectTypeName="sugarcrmaccount" operationType="UPSERT" requestProfile="e8621b43-5c1e-49cb-b86b-484ae65aa36e" requestProfileType="xml" responseProfileType="xml">
+          <field id="source" type="string" value="SugarCRM_Source"/>
+          <field id="stagingId" type="string" value=""/>
+          <Options>
+            <QueryOptions>
+              <Fields>
+                <ConnectorObject name="sugarcrmaccount"/>
+              </Fields>
+              <Inputs/>
+            </QueryOptions>
+          </Options>
+        </GenericOperationConfig>
+      </Configuration>
+      <Tracking>
+        <TrackedFields/>
+      </Tracking>
+      <Caching/>
+    </Operation>
+  </bns:object>
+</bns:Component>

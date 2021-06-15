@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Boomi_KenHilmen" componentId="c1b52388-790f-4b23-8e36-d5d4b45ca999" version="6" name="SugarCRM Account to MDM AccountMap" type="transform.map" createdDate="2020-05-06T20:13:59Z" createdBy="ken.hilmen@dell.com" modifiedDate="2020-07-16T18:00:56Z" modifiedBy="ken.hilmen@dell.com" deleted="false" currentVersion="true" folderName="Boomi_KenHilmen" folderId="RjoyOTE3NzA1">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <Map xmlns="" fromProfile="b90fa526-559e-4f0a-aeb2-e92dc69955ec" toProfile="fdf865fd-3d7d-4a83-a7fc-98a9856030d1">
+      <Mappings>
+        <Mapping fromKey="3" fromKeyPath="*[@key='1']/*[@key='2']/*[@key='3']" fromNamePath="/Object/account_type" fromType="profile" toKey="75" toKeyPath="*[@key='1']/*[@key='75']" toNamePath="sugarcrmaccount/account_type" toType="profile"/>
+        <Mapping fromKey="7" fromKeyPath="*[@key='1']/*[@key='2']/*[@key='7']" fromNamePath="/Object/billing_address_city" fromType="profile" toKey="83" toKeyPath="*[@key='1']/*[@key='83']" toNamePath="sugarcrmaccount/billing_address_city" toType="profile"/>
+        <Mapping fromKey="9" fromKeyPath="*[@key='1']/*[@key='2']/*[@key='9']" fromNamePath="/Object/billing_address_postalcode" fromType="profile" toKey="87" toKeyPath="*[@key='1']/*[@key='87']" toNamePath="sugarcrmaccount/billing_address_postalcode" toType="profile"/>
+        <Mapping fromKey="22" fromKeyPath="*[@key='1']/*[@key='2']/*[@key='22']" fromNamePath="/Object/email1" fromType="profile" toKey="113" toKeyPath="*[@key='1']/*[@key='113']" toNamePath="sugarcrmaccount/email1" toType="profile"/>
+        <Mapping fromKey="23" fromKeyPath="*[@key='1']/*[@key='2']/*[@key='23']" fromNamePath="/Object/email2" fromType="profile" toKey="115" toKeyPath="*[@key='1']/*[@key='115']" toNamePath="sugarcrmaccount/email2" toType="profile"/>
+        <Mapping fromKey="58" fromKeyPath="*[@key='1']/*[@key='2']/*[@key='58']" fromNamePath="/Object/website" fromType="profile" toKey="183" toKeyPath="*[@key='1']/*[@key='183']" toNamePath="sugarcrmaccount/website" toType="profile"/>
+        <Mapping fromKey="30" fromKeyPath="*[@key='1']/*[@key='2']/*[@key='30']" fromNamePath="/Object/id" fromType="profile" toKey="73" toKeyPath="*[@key='1']/*[@key='73']" toNamePath="sugarcrmaccount/id" toType="profile"/>
+        <Mapping fromKey="35" fromKeyPath="*[@key='1']/*[@key='2']/*[@key='35']" fromNamePath="Object/name" fromType="profile" toKey="137" toKeyPath="*[@key='1']/*[@key='137']" toNamePath="sugarcrmaccount/name (Hysterar)" toType="profile"/>
+        <Mapping fromKey="41" fromKeyPath="*[@key='1']/*[@key='2']/*[@key='41']" fromNamePath="Object/phone_office" fromType="profile" toKey="149" toKeyPath="*[@key='1']/*[@key='149']" toNamePath="sugarcrmaccount/phone_office" toType="profile"/>
+      </Mappings>
+      <Functions optimizeExecutionOrder="true"/>
+      <Defaults/>
+      <DocumentCacheJoins/>
+    </Map>
+  </bns:object>
+</bns:Component>

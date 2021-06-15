@@ -1,0 +1,632 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Boomi_KenHilmen" componentId="e8621b43-5c1e-49cb-b86b-484ae65aa36e" version="2" name="MDM sugarcrmaccount UPSERT Request" type="profile.xml" createdDate="2020-05-06T20:34:09Z" createdBy="ken.hilmen@dell.com" modifiedDate="2020-06-17T16:23:30Z" modifiedBy="ken.hilmen@dell.com" deleted="false" currentVersion="true" folderName="Boomi_KenHilmen" folderId="RjoyOTE3NzA1">
+  <bns:encryptedValues/>
+  <bns:object>
+    <XMLProfile xmlns="" modelVersion="2" strict="true">
+      <ProfileProperties>
+        <XMLGeneralInfo/>
+        <XMLOptions encoding="utf8" implicitElementOrdering="true" parseRespectMaxOccurs="true" respectMinOccurs="false"/>
+      </ProfileProperties>
+      <DataElements>
+        <XMLElement dataType="character" isMappable="true" isNode="true" key="1" maxOccurs="1" minOccurs="1" name="sugarcrmaccount" typeExpanded="false" typeKey="-1" useNamespace="-1">
+          <DataFormat>
+            <ProfileCharacterFormat/>
+          </DataFormat>
+          <XMLAttribute dataType="character" isMappable="true" isNode="true" key="65" name="op" required="false" useNamespace="-1" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+          </XMLAttribute>
+          <XMLAttribute dataType="character" isMappable="true" isNode="true" key="67" name="ts" required="false" useNamespace="-1" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+          </XMLAttribute>
+          <XMLAttribute dataType="character" isMappable="true" isNode="true" key="69" name="grid" required="false" useNamespace="-1" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+          </XMLAttribute>
+          <XMLAttribute dataType="character" isMappable="true" isNode="true" key="71" name="enddate" required="false" useNamespace="-1" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+          </XMLAttribute>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="73" loopingOption="unique" maxOccurs="1" minOccurs="1" name="id" typeKey="-1" useNamespace="-1" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="75" loopingOption="unique" maxOccurs="1" minOccurs="0" name="account_type" typeKey="-1" useNamespace="-1" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="77" loopingOption="unique" maxOccurs="1" minOccurs="0" name="acl_team_set_id" typeKey="-1" useNamespace="-1" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="79" loopingOption="unique" maxOccurs="1" minOccurs="0" name="annual_revenue" typeKey="-1" useNamespace="-1" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="81" loopingOption="unique" maxOccurs="1" minOccurs="0" name="assigned_user_id" typeKey="-1" useNamespace="-1" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="83" loopingOption="unique" maxOccurs="1" minOccurs="0" name="billing_address_city" typeKey="-1" useNamespace="-1" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="85" loopingOption="unique" maxOccurs="1" minOccurs="0" name="billing_address_country" typeKey="-1" useNamespace="-1" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="87" loopingOption="unique" maxOccurs="1" minOccurs="0" name="billing_address_postalcode" typeKey="-1" useNamespace="-1" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="89" loopingOption="unique" maxOccurs="1" minOccurs="0" name="billing_address_state" typeKey="-1" useNamespace="-1" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="91" loopingOption="unique" maxOccurs="1" minOccurs="0" name="billing_address_street" typeKey="-1" useNamespace="-1" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="93" loopingOption="unique" maxOccurs="1" minOccurs="0" name="billing_address_street_2" typeKey="-1" useNamespace="-1" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="95" loopingOption="unique" maxOccurs="1" minOccurs="0" name="billing_address_street_3" typeKey="-1" useNamespace="-1" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="97" loopingOption="unique" maxOccurs="1" minOccurs="0" name="billing_address_street_4" typeKey="-1" useNamespace="-1" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="99" loopingOption="unique" maxOccurs="1" minOccurs="0" name="campaign_id" typeKey="-1" useNamespace="-1" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="101" loopingOption="unique" maxOccurs="1" minOccurs="0" name="created_by" typeKey="-1" useNamespace="-1" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="103" loopingOption="unique" maxOccurs="1" minOccurs="0" name="date_entered" typeKey="-1" useNamespace="-1" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="105" loopingOption="unique" maxOccurs="1" minOccurs="0" name="date_modified" typeKey="-1" useNamespace="-1" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="107" loopingOption="unique" maxOccurs="1" minOccurs="0" name="deleted" typeKey="-1" useNamespace="-1" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="109" loopingOption="unique" maxOccurs="1" minOccurs="0" name="description" typeKey="-1" useNamespace="-1" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="111" loopingOption="unique" maxOccurs="1" minOccurs="0" name="duns_num" typeKey="-1" useNamespace="-1" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="113" loopingOption="unique" maxOccurs="1" minOccurs="0" name="email1" typeKey="-1" useNamespace="-1" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="115" loopingOption="unique" maxOccurs="1" minOccurs="0" name="email2" typeKey="-1" useNamespace="-1" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="117" loopingOption="unique" maxOccurs="1" minOccurs="0" name="email_addresses_non_primary" typeKey="-1" useNamespace="-1" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="119" loopingOption="unique" maxOccurs="1" minOccurs="0" name="email_opt_out" typeKey="-1" useNamespace="-1" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="121" loopingOption="unique" maxOccurs="1" minOccurs="0" name="employees" typeKey="-1" useNamespace="-1" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="123" loopingOption="unique" maxOccurs="1" minOccurs="0" name="facebook" typeKey="-1" useNamespace="-1" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="125" loopingOption="unique" maxOccurs="1" minOccurs="0" name="following" typeKey="-1" useNamespace="-1" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="127" loopingOption="unique" maxOccurs="1" minOccurs="0" name="googleplus" typeKey="-1" useNamespace="-1" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="129" loopingOption="unique" maxOccurs="1" minOccurs="0" name="industry" typeKey="-1" useNamespace="-1" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="131" loopingOption="unique" maxOccurs="1" minOccurs="0" name="invalid_email" typeKey="-1" useNamespace="-1" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="133" loopingOption="unique" maxOccurs="1" minOccurs="0" name="modified_user_id" typeKey="-1" useNamespace="-1" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="135" loopingOption="unique" maxOccurs="1" minOccurs="0" name="my_favorite" typeKey="-1" useNamespace="-1" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="137" loopingOption="unique" maxOccurs="1" minOccurs="0" name="name" typeKey="-1" useNamespace="-1" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="139" loopingOption="unique" maxOccurs="1" minOccurs="0" name="next_renewal_date" typeKey="-1" useNamespace="-1" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="141" loopingOption="unique" maxOccurs="1" minOccurs="0" name="ownership" typeKey="-1" useNamespace="-1" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="143" loopingOption="unique" maxOccurs="1" minOccurs="0" name="parent_id" typeKey="-1" useNamespace="-1" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="145" loopingOption="unique" maxOccurs="1" minOccurs="0" name="phone_alternate" typeKey="-1" useNamespace="-1" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="147" loopingOption="unique" maxOccurs="1" minOccurs="0" name="phone_fax" typeKey="-1" useNamespace="-1" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="149" loopingOption="unique" maxOccurs="1" minOccurs="0" name="phone_office" typeKey="-1" useNamespace="-1" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="151" loopingOption="unique" maxOccurs="1" minOccurs="0" name="rating" typeKey="-1" useNamespace="-1" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="153" loopingOption="unique" maxOccurs="1" minOccurs="0" name="sap_customer_id_c" typeKey="-1" useNamespace="-1" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="155" loopingOption="unique" maxOccurs="1" minOccurs="0" name="service_level" typeKey="-1" useNamespace="-1" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="157" loopingOption="unique" maxOccurs="1" minOccurs="0" name="shipping_address_city" typeKey="-1" useNamespace="-1" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="159" loopingOption="unique" maxOccurs="1" minOccurs="0" name="shipping_address_country" typeKey="-1" useNamespace="-1" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="161" loopingOption="unique" maxOccurs="1" minOccurs="0" name="shipping_address_postalcode" typeKey="-1" useNamespace="-1" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="163" loopingOption="unique" maxOccurs="1" minOccurs="0" name="shipping_address_state" typeKey="-1" useNamespace="-1" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="165" loopingOption="unique" maxOccurs="1" minOccurs="0" name="shipping_address_street" typeKey="-1" useNamespace="-1" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="167" loopingOption="unique" maxOccurs="1" minOccurs="0" name="shipping_address_street_2" typeKey="-1" useNamespace="-1" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="169" loopingOption="unique" maxOccurs="1" minOccurs="0" name="shipping_address_street_3" typeKey="-1" useNamespace="-1" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="171" loopingOption="unique" maxOccurs="1" minOccurs="0" name="shipping_address_street_4" typeKey="-1" useNamespace="-1" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="173" loopingOption="unique" maxOccurs="1" minOccurs="0" name="sic_code" typeKey="-1" useNamespace="-1" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="175" loopingOption="unique" maxOccurs="1" minOccurs="0" name="team_id" typeKey="-1" useNamespace="-1" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="177" loopingOption="unique" maxOccurs="1" minOccurs="0" name="team_set_id" typeKey="-1" useNamespace="-1" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="179" loopingOption="unique" maxOccurs="1" minOccurs="0" name="ticker_symbol" typeKey="-1" useNamespace="-1" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="181" loopingOption="unique" maxOccurs="1" minOccurs="0" name="twitter" typeKey="-1" useNamespace="-1" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="183" loopingOption="unique" maxOccurs="1" minOccurs="0" name="website" typeKey="-1" useNamespace="-1" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+          </XMLElement>
+        </XMLElement>
+      </DataElements>
+      <Namespaces>
+        <XMLNamespace key="-1" name="Empty Namespace" prefix="ns1">
+          <Types>
+            <Type anonymous="true" declarationClass="cType" typeKey="-2">
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="3" loopingOption="unique" maxOccurs="1" minOccurs="0" name="sugarcrmaccount" typeExpanded="false" typeKey="-2" useNamespace="-1" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+                <XMLAttribute dataType="character" isMappable="true" isNode="true" key="4" name="op" required="false" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLAttribute>
+                <XMLAttribute dataType="character" isMappable="true" isNode="true" key="5" name="ts" required="false" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLAttribute>
+                <XMLAttribute dataType="character" isMappable="true" isNode="true" key="6" name="grid" required="false" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLAttribute>
+                <XMLAttribute dataType="character" isMappable="true" isNode="true" key="7" name="enddate" required="false" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLAttribute>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="8" maxOccurs="1" minOccurs="1" name="id" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="9" maxOccurs="1" minOccurs="0" name="account_type" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="10" maxOccurs="1" minOccurs="0" name="acl_team_set_id" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="11" maxOccurs="1" minOccurs="0" name="annual_revenue" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="12" maxOccurs="1" minOccurs="0" name="assigned_user_id" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="13" maxOccurs="1" minOccurs="0" name="billing_address_city" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="14" maxOccurs="1" minOccurs="0" name="billing_address_country" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="15" maxOccurs="1" minOccurs="0" name="billing_address_postalcode" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="16" maxOccurs="1" minOccurs="0" name="billing_address_state" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="17" maxOccurs="1" minOccurs="0" name="billing_address_street" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="18" maxOccurs="1" minOccurs="0" name="billing_address_street_2" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="19" maxOccurs="1" minOccurs="0" name="billing_address_street_3" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="20" maxOccurs="1" minOccurs="0" name="billing_address_street_4" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="21" maxOccurs="1" minOccurs="0" name="campaign_id" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="22" maxOccurs="1" minOccurs="0" name="created_by" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="23" maxOccurs="1" minOccurs="0" name="date_entered" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="24" maxOccurs="1" minOccurs="0" name="date_modified" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="25" maxOccurs="1" minOccurs="0" name="deleted" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="26" maxOccurs="1" minOccurs="0" name="description" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="27" maxOccurs="1" minOccurs="0" name="duns_num" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="28" maxOccurs="1" minOccurs="0" name="email1" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="29" maxOccurs="1" minOccurs="0" name="email2" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="30" maxOccurs="1" minOccurs="0" name="email_addresses_non_primary" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="31" maxOccurs="1" minOccurs="0" name="email_opt_out" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="32" maxOccurs="1" minOccurs="0" name="employees" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="33" maxOccurs="1" minOccurs="0" name="facebook" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="34" maxOccurs="1" minOccurs="0" name="following" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="35" maxOccurs="1" minOccurs="0" name="googleplus" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="36" maxOccurs="1" minOccurs="0" name="industry" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="37" maxOccurs="1" minOccurs="0" name="invalid_email" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="38" maxOccurs="1" minOccurs="0" name="modified_user_id" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="39" maxOccurs="1" minOccurs="0" name="my_favorite" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="40" maxOccurs="1" minOccurs="0" name="name" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="41" maxOccurs="1" minOccurs="0" name="next_renewal_date" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="42" maxOccurs="1" minOccurs="0" name="ownership" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="43" maxOccurs="1" minOccurs="0" name="parent_id" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="44" maxOccurs="1" minOccurs="0" name="phone_alternate" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="45" maxOccurs="1" minOccurs="0" name="phone_fax" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="46" maxOccurs="1" minOccurs="0" name="phone_office" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="47" maxOccurs="1" minOccurs="0" name="rating" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="48" maxOccurs="1" minOccurs="0" name="sap_customer_id_c" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="49" maxOccurs="1" minOccurs="0" name="service_level" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="50" maxOccurs="1" minOccurs="0" name="shipping_address_city" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="51" maxOccurs="1" minOccurs="0" name="shipping_address_country" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="52" maxOccurs="1" minOccurs="0" name="shipping_address_postalcode" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="53" maxOccurs="1" minOccurs="0" name="shipping_address_state" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="54" maxOccurs="1" minOccurs="0" name="shipping_address_street" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="55" maxOccurs="1" minOccurs="0" name="shipping_address_street_2" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="56" maxOccurs="1" minOccurs="0" name="shipping_address_street_3" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="57" maxOccurs="1" minOccurs="0" name="shipping_address_street_4" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="58" maxOccurs="1" minOccurs="0" name="sic_code" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="59" maxOccurs="1" minOccurs="0" name="team_id" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="60" maxOccurs="1" minOccurs="0" name="team_set_id" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="61" maxOccurs="1" minOccurs="0" name="ticker_symbol" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="62" maxOccurs="1" minOccurs="0" name="twitter" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="63" maxOccurs="1" minOccurs="0" name="website" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+              </XMLElement>
+            </Type>
+          </Types>
+        </XMLNamespace>
+      </Namespaces>
+    </XMLProfile>
+  </bns:object>
+</bns:Component>

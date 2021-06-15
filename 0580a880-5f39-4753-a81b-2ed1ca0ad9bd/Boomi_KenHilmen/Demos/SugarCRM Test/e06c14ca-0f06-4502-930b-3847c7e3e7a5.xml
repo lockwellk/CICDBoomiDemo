@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Boomi_KenHilmen/Demos/SugarCRM Test" componentId="e06c14ca-0f06-4502-930b-3847c7e3e7a5" version="2" name="SugarCRM MDM Connection" type="connector-settings" subType="mdm" createdDate="2020-05-05T20:50:57Z" createdBy="ken.hilmen@dell.com" modifiedDate="2020-05-05T21:00:30Z" modifiedBy="ken.hilmen@dell.com" deleted="false" currentVersion="true" folderName="SugarCRM Test" folderId="RjozMjY0NjUw">
+  <bns:encryptedValues>
+    <bns:encryptedValue path="//GenericConnectionConfig/field[@type='password']" isSet="true"/>
+  </bns:encryptedValues>
+  <bns:description/>
+  <bns:object>
+    <GenericConnectionConfig xmlns="">
+      <field id="url" type="string" value="https://mdm.boomi.com/mdm/"/>
+      <field id="accountId" type="string" value="boomi_kenhilmen-TS5GBN.HSUNFS"/>
+      <field id="token" type="password" value="f6bcdc81a8e660d29d31f8fd5af2718cc7bc5e16f0221bc30fd4415422fc11583d8edf4d16f308d52ec2173fa39e72d68f302dc1b00b7ace65b49d7647acce84"/>
+    </GenericConnectionConfig>
+  </bns:object>
+</bns:Component>
